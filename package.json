@@ -13,8 +13,9 @@
     "probot-app"
   ],
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "dev": "nodemon --exec \"npm start\"",
-    "start": "probot run ./index.js",
+    "start": "probot run ./lib/index.js",
     "lint": "standard --fix",
     "test": "jest && standard",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
@@ -26,7 +27,8 @@
     "jest": "^22.4.3",
     "nodemon": "^1.17.2",
     "smee-client": "^1.0.2",
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "typescript": "^2.9.2"
   },
   "engines": {
     "node": ">= 8.3.0"
