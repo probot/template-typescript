@@ -1,5 +1,5 @@
 // You can import your modules
-// const index = require('../index')
+// import index from './index'
 
 test('that we can run tests', () => {
   // your real tests go here
@@ -8,3 +8,5 @@ test('that we can run tests', () => {
 
 // For more information about testing with Jest see:
 // https://facebook.github.io/jest/
+// For using TypeScript in your tests, Jest recommends:
+// https://github.com/kulshekhar/ts-jest
