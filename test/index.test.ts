@@ -15,7 +15,7 @@ describe('My Probot app', () => {
 
   beforeEach(() => {
     app = new Application()
-    // Initialize the app based on the code from index.js
+    // Initialize the app based on the code from index.ts
     app.load(myProbotApp)
     // This is an easy way to mock out the GitHub API
     github = {
@@ -34,7 +34,7 @@ describe('My Probot app', () => {
       payload: issuesOpenedPayload
     })
 
-    // This test passes if the code in your index.js file calls `context.github.issues.createComment`
+    // This test passes if the code in your index.ts file calls `context.github.issues.createComment`
     expect(github.issues.createComment).toHaveBeenCalled()
   })
 })
