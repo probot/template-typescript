@@ -1,6 +1,6 @@
 import { Application } from 'probot'
 
-export default (app: Application) => {
+export = (app: Application) => {
   // Your code here
   app.log('Yay, the app was loaded!')
 
